@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -23,15 +24,16 @@ body {
 
 .Header img{
   display: flex;
-  position: absolute;
+  position: fixed;
   width: 70px;
   height: 70px;
   top: 5px;
   border-radius: 100px;
-  right: 100px;
+  right: 60px;
 }
 
 .Header button{
+  position: absolute;
   margin-left: 20px;
   font-family: 'Inter';
   font-style: normal;
@@ -39,10 +41,67 @@ body {
   line-height: 0px;
   color: black;
   border: none;
-  background-color: rgba(147,222,238,1);
+  background-color: rgba(147,222,238,1); 
+  bottom: 0px;
+  top: 0px;
+  margin-top: 0px;
+  cursor: pointer;
   }
 
-.MainPage {
+.Header search-container {
+  display: flex;
+  position: absolute;
+  width: 672px;
+  height: 32px;
+  float: center;
+}
+
+.Header .search-container input[type=text] {
+  padding: 7px;
+  margin-top: 0px;
+  width: 32%;
+  font-size: 17px;
+  border: none;
+  margin-left: 30%;
+  display: flex;
+  display: flex;
+  top: 25px;
+  position: fixed;
+  border-radius: 25px;
+}
+
+.Header .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  margin-right: 0px;
+  margin-bottom: 8px;
+  position: fixed;
+  display: flex;
+  height: fit-content;
+  margin-left: 63%;
+  margin-top: 27px;
+  background: #b4e2d8;
+  border-radius: 100%;
   
 }
 
+.Header .button .p {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.Header .search-container .fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+    font-size: 14px;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 17px;
+  height: 22px;
+}
