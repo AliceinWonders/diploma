@@ -101,3 +101,10 @@ body {
   width: 17px;
   height: 22px;
 }
+
+.Header .dropdown-item{
+  background: #BAE3D4;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
