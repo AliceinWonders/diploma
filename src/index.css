@@ -22,15 +22,6 @@ body {
   padding-left: 30px;
 }
 
-.Header img{
-  display: flex;
-  position: fixed;
-  width: 70px;
-  height: 70px;
-  top: 5px;
-  border-radius: 100px;
-  right: 60px;
-}
 
 .Header button{
   position: absolute;
@@ -107,4 +98,159 @@ body {
   border-radius: 15px;
   margin-bottom: 10px;
   text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 30px;
+  line-height: 0px;
+  color: black;
+  border: none;
 }
+
+.Header .dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.Header .dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #F1FFFA;
+  /* min-width: 160px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 16px;
+  z-index: 1;
+  border-radius: 15px;
+  align-content: center;
+  top:12%;
+  left: 80%;
+}
+
+.Header .dropdown .dropdown-content {
+  display: block;
+}
+
+.Header .dropdown-list{
+  list-style-type: none;
+  padding-left: 0;
+  color: black;
+  
+}
+
+
+.Header .dropdown-element{
+  /* position: absolute; */
+  text-align: center;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 40px;
+  /* left: 20px;
+  top: 20px; */
+  background: #BAE3D4;
+  border-radius: 15px;
+  font-style: normal;
+  font-size: 25px;
+  /* line-height: 0px; */
+  color: black;
+  
+}
+
+.Header img{
+  display: flex;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  border-radius: 100px;
+  right: 60px;
+}
+
+.Post{
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  padding: 20px;
+  width: 900px;
+  height: 400px;
+  background: linear-gradient(90deg, rgba(147,222,238,1) 35%, rgba(186,227,212,1) 70%);
+}
+
+.Post .card-photo{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  width: 420px;
+  height: 360px;
+}
+.Post .card-profile {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  margin-bottom: 10px;
+}
+.Post .card-info{
+  margin-left: 5px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+.Post .card-author{
+  
+}
+.Post .card-date{
+  color: rgb(111, 111, 111);
+  
+}
+.Post .card-travel-photo{
+  display: flex;
+  width: 420px;
+  height: 290px;
+  border-radius: 25px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 100%;
+  height: 100%;
+}
+
+
+.Post .card-text{
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 420px;
+  height: 360px;
+
+}
+
+.Post .card-icon{
+  display: flex;
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  border-radius: 100px;
+}
+
+.Post .card-title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+.Post .card-text-content{
+  text-align: justify;
+}
+.Post .inactive{
+  color:black;
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  
+}
+
+
