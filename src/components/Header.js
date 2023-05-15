@@ -39,7 +39,7 @@ function Header(props){
                 </div>
                        
                 <div class="search-container">
-                  <form action="../action_page.php">
+                  <form action="../action_page/">
                     <input type="text" placeholder="Поиск.." name="search"></input>
                     <button type="submit"><i class="fa fa-search"></i></button>
                   </form>

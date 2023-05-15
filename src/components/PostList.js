@@ -6,8 +6,8 @@ function PostList() {
     
     return( 
         <div className="PostList">
-            <ul>
-                <li>
+            <ul class="post-list">
+                <li >
                     <Post></Post>
                 </li>
                 <li>
