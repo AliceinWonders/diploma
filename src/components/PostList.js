@@ -2,20 +2,17 @@ import React from "react";
 import Post from "./Post";
 import { NavLink, Route, Routes } from "react-router-dom";
 
-function PostList() {
-    
+function PostList(props) {
+    console.log(props.posts)
     return( 
         <div className="PostList">
-            <ul class="post-list">
-                <li >
-                    <Post></Post>
-                </li>
-                <li>
-                    <Post></Post>
-                </li>
-                <li>
-                    <Post></Post>
-                </li>
+            <ul>
+                {
+                    props.posts.map(function(onePost){
+                        console.log(onePost)
+                        return <Post key={onePost.title} post={onePost}></Post>
+                    })
+                }
             </ul>
          </div>)
                           
