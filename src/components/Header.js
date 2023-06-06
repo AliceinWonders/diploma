@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import jp from "jsonpath"
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -15,12 +16,12 @@ function Header(props){
   function changeShowDropdown(){
     setShowDropdown(!showDropdown)
   }
-  searchPost((content)=>{
-    fetch('https://localhost:44397/Articles/SearchByContent/'+content, options)
-        .then(response => response.json())
-        .then(response => setPosts(jp.query(response, '$.hits.hits[*]')))
-        .catch(err => console.error(err));
-})
+//   function searchPost(content) {
+//     fetch('https://localhost:7294/Articles/SearchByContent/'+content)
+//         .then(response => response.json())
+//         .then(response => setPosts(jp.query(response, '$.hits.hits[*]')))
+//         .catch(err => console.error(err));
+// }
 
   return(
       
@@ -44,10 +45,8 @@ function Header(props){
                 </div>
                        
                 <div class="search-container">
-                  <form action="../action_page/">
-                    <input type="text" placeholder="Поиск.." name="search" onChange={setInputContent(e.target.value)}></input>
-                    <button type="submit" onClick={searchPost(inputContent)}><i class="fa fa-search"></i></button>
-                  </form>
+                    <input type="text" placeholder="Поиск.." name="search" onChange={(e) => setInputContent(e.target.value)}></input> 
+                    <button type="submit" onClick={() => props.mySearchPost(inputContent)}><i class="fa fa-search"></i></button>
                 </div>
             </nav>   
         </div>

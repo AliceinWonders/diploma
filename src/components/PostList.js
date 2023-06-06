@@ -10,7 +10,7 @@ function PostList(props) {
                 {
                     props.posts.map(function(onePost){
                         console.log(onePost)
-                        return <Post key={onePost.title} post={onePost}></Post>
+                        return <Post key={onePost._id} post={onePost}></Post>
                     })
                 }
             </ul>
